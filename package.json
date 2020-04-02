@@ -1,0 +1,21 @@
+{
+  "name": "control_summ",
+  "version": "1.0.0",
+  "description": "snils,inn",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/vows/bin/vows test/*"
+  },
+  "keywords": [
+    "snils",
+    "inn"
+  ],
+  "author": "Ymnuk",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.padstart": "^4.6.1"
+  },
+  "devDependencies": {
+    "vows": "^0.8.3"
+  }
+}
