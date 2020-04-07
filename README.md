@@ -14,15 +14,15 @@
 # Объекты
 
 ```javascript
-const controlSumm = require('controlsumm');
+const controlNumberJs = require('control-number-js');
 
-const account=controlSumm.BankAccount;
-const ean = controlSumm.EAN;
-const inn = controlSumm.INN;
-const isin = controlSumm.ISIN;
-const ogrn = controlSumm.ORGN;
-const ogrnip = controlSumm.ORGNIP;
-const okpo = controlSumm.OKPO;
-const snils = controlSumm.Snils;
-const vin = controlSumm.VIN;
+const account=controlNumberJs.BankAccount;
+const ean = controlNumberJs.EAN;
+const inn = controlNumberJs.INN;
+const isin = controlNumberJs.ISIN;
+const ogrn = controlNumberJs.ORGN;
+const ogrnip = controlNumberJs.ORGNIP;
+const okpo = controlNumberJs.OKPO;
+const snils = controlNumberJs.Snils;
+const vin = controlNumberJs.VIN;
 ```
