@@ -1,7 +1,11 @@
 {
-  "name": "control_summ",
+  "name": "control-number-js",
   "version": "1.0.0",
-  "description": "snils,inn",
+  "description": "snils,inn,isin,ogrn,ogrnip,okpo,vin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ymnuk/control-number-js.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/vows/bin/vows test/*"
