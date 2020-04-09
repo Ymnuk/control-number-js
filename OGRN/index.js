@@ -8,6 +8,8 @@ function normalize(value) {
     if (isNaN(value)) {
         return null;
     }
+    if (value === 0)
+        return null;
     return value;
 }
 

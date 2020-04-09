@@ -51,6 +51,8 @@ function normalize(value) {
     value = parseInt(value.substring(0, value.length - 1));
     if (isNaN(value))
         return null;
+    if (value === 0)
+        return null;
     return value;
 }
 

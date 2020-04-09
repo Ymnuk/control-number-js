@@ -11,7 +11,12 @@ function normalize(value) {
     if (isNaN(value)) {
         return null;
     }
-    return Math.trunc(value / 10);
+    value = Math.trunc(value / 10);
+    if (value === 0)
+        return null;
+    if (value === 0)
+        return null;
+    return value;
 }
 
 function controlSumm10(value) {

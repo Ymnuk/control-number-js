@@ -46,7 +46,10 @@ function normalize(value) {
     value = prepare(value);
     if (value == null)
         return null;
-    return (value - value % 10) / 10;
+    value = (value - value % 10) / 10;
+    if (value === 0)
+        return null;
+    return value;
     //return value.substring(0, value.length - 1);
 }
 

@@ -14,7 +14,10 @@ function normalize(value) {
     if (isNaN(value)) {
         return 0;
     }
-    return Math.trunc(value / 100);
+    value = Math.trunc(value / 100);
+    if (value === 0)
+        return null;
+    return value;
 }
 
 /**
