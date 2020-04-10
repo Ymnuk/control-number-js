@@ -47,5 +47,13 @@ vows.describe('Verify SNILS')
             'Control summ confirm': function (topic) {
                 assert.equal(topic, true);
             }
+        },
+        'Verify normalize SNILS with null': {
+            topic: function () {
+                return Snils.normalize('нет сведений');
+            },
+            'Normalized to null': function (topic) {
+                assert.equal(topic, null);
+            }
         }
     }).export(module);

@@ -12,7 +12,7 @@ function normalize(value) {
     value = value.replace(/\D/g, '');
     value = parseInt(value);
     if (isNaN(value)) {
-        return 0;
+        return null;
     }
     value = Math.trunc(value / 100);
     if (value === 0)

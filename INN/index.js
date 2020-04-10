@@ -14,8 +14,6 @@ function normalize(value) {
     value = Math.trunc(value / 10);
     if (value === 0)
         return null;
-    if (value === 0)
-        return null;
     return value;
 }
 

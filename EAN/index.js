@@ -10,7 +10,7 @@ function normalize(value) {
     value = value.substring(0, value.length - 1);
     value = parseInt(value);
     if (isNaN(value)) {
-        return 0;
+        return null;
     }
     if (value === 0)
         return null;
