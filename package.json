@@ -11,8 +11,15 @@
     "test": "node ./node_modules/vows/bin/vows test/*"
   },
   "keywords": [
+    "BankAccount",
+    "ean",
+    "inn",
+    "isin",
+    "ogrn",
+    "ogrnip",
+    "okpo",
     "snils",
-    "inn"
+    "vin"
   ],
   "author": "Ymnuk",
   "license": "ISC",
