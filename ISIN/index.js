@@ -1,4 +1,4 @@
-const padStart = require('lodash.padstart');
+//const padStart = require('lodash.padstart');
 
 const k = [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1];
 const alf = {

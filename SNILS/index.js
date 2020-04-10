@@ -38,7 +38,7 @@ function controlSumm(value) {
     value = value.split('');
     let sum = 0;
     for (let i = 0; i < 9; i++) {
-        let v = parseInt(value[0]);
+        let v = parseInt(value[i]);
         if (isNaN(v))
             return NaN;
         sum += (9 - i) * v;

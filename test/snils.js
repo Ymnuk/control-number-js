@@ -47,7 +47,9 @@ vows.describe('Verify SNILS')
             'Control summ confirm': function (topic) {
                 assert.equal(topic, true);
             }
-        },
+        }
+    }).
+    addBatch({
         'Verify normalize SNILS with null': {
             topic: function () {
                 return Snils.normalize('нет сведений');
@@ -56,4 +58,51 @@ vows.describe('Verify SNILS')
                 assert.equal(topic, null);
             }
         }
-    }).export(module);
+    })
+    .addBatch({
+        'Normalize': {
+            topic: function () {
+                return Snils.normalize('080-058-323-36');
+            },
+            'This is number': function (topic) {
+                assert.equal(typeof (topic), 'number');
+            },
+            'Number 80058323': function (topic) {
+                assert.equal(topic, 80058323)
+            }
+        },
+        'Control summ': {
+            topic: function () {
+                return Snils.controlSumm(80058323);
+            },
+            'This is number': function (topic) {
+                assert.equal(typeof (topic), 'number');
+            },
+            'Number 36': function (topic) {
+                assert.equal(topic, 36);
+            }
+        },
+        'Pretty print': {
+            topic: function () {
+                return Snils.prettyPrint(80058323);
+            },
+            'This is string': function (topic) {
+                assert.equal(typeof (topic), 'string');
+            },
+            'Pretty printed': function (topic) {
+                assert.equal(topic, '080-058-323 36')
+            }
+        },
+        'Verify snils': {
+            topic: function () {
+                return Snils.verify('080-058-323-36');
+            },
+            'This is boolean': function (topic) {
+                assert.equal(typeof (topic), 'boolean');
+            },
+            'Control summ confirm': function (topic) {
+                assert.equal(topic, true);
+            }
+        }
+    })
+    .export(module);
